@@ -1,0 +1,80 @@
+/* ----------------------------------------------------------------
+	Extra Styles
+-----------------------------------------------------------------*/
+.container-fluid {
+	overflow: hidden;
+}
+
+.play-btn {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#appointment {
+	position: relative;
+	padding: 10rem 0;
+
+	.decor-left {
+		position: absolute;
+		left: 0;
+		bottom: -6rem;
+	}
+
+	.decor-right {
+		position: absolute;
+		right: 2rem;
+		top: -3rem;
+	}
+}
+
+.flow {
+	position: absolute;
+	top: -4rem;
+    right: 0;
+    z-index: -1;
+
+	img {
+		max-width: 100%;
+	}
+
+	&.contact {
+		bottom: 7rem;
+		top: auto;
+	}
+
+	&.left {
+		top: 0;
+		left: 0;
+	}
+}
+
+.comb {
+	position: absolute;
+	bottom: -2rem;
+	right: 1rem;
+
+	img {
+		max-width: 100%;
+	}
+}
+
+.slick-next, .slick-prev {
+	width: 15px;
+	height: 25px;
+}
+
+.slick-prev {
+	left: -4rem;
+}
+
+.slick-next {
+	right: -4rem;
+}
+
+.slick-slide {
+	height: auto;
+	margin: 1rem;
+}

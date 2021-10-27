@@ -1,0 +1,44 @@
+/* ----------------------------------------------------------------
+
+	404.scss
+
+-----------------------------------------------------------------*/
+.error-logo {
+    font-family: $heading-font;
+    font-weight: 300;
+    font-size: 18.75rem;
+    line-height: 0.875;
+    color: #3c3c3c;
+    
+    @include media-breakpoint-down(sm) {
+        font-size: 10.75rem;
+    }
+}
+
+.error-404 {
+    position: relative;
+    z-index: 1;
+
+    .sub-title {
+		font-family: Haigrast;
+		color: $theme-color;
+		font-size: 4.5rem;
+		margin-top: -1rem;
+        margin-left: 18rem;
+
+		@include media-breakpoint-down(lg) {
+			margin: 0 !important;
+		}
+	}
+
+    .comb {
+        position: absolute;
+        bottom: -2rem;
+        left: -0.5rem;
+        z-index: -1;
+
+        img {
+            max-width: 12rem;
+        }
+    }
+}

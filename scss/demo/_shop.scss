@@ -1,0 +1,165 @@
+
+/* ----------------------------------------------------------------
+
+	shop.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Shop
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for shop pages. Thanks!
+-----------------------------------------------------------------*/
+
+/* Product
+-----------------------------------------------------------------*/
+.product {
+	position: relative;
+
+	.product-image {
+		position: relative;
+
+		img {
+			width: 100%;
+			margin: auto;
+		}
+
+		> a:nth-of-type(2) {
+			opacity: 0;
+			position: absolute;
+			z-index: -1;
+			top: 0;
+			left: 0;
+			right: 0;
+			@include transition(all 0.3s ease-in-out);
+		}
+	}
+
+	.product-details {
+		padding: 1.25rem 0;
+		z-index: 1;
+	}
+
+	.product-price {
+		font-family: Gilroy-semibold;
+		font-size: 1.125rem;
+		color: #362e29;
+
+		del {
+			font-weight: 600;
+			font-size: 1.125rem;
+		}
+	}
+
+	.product-quantity {
+		font-family: Gilroy-regular;
+	}
+
+	.product-title {
+		font-family: Gilroy-regular;
+		font-size: 1rem;
+	}
+
+	.product-rating {
+		line-height: 1;
+		color: $secondary;
+		font-size: 0.5rem;
+
+		i {
+			color: #535353;
+			font-size: 0.75rem;
+
+			&.empty {
+				color: rgba(#535353, 0.5);
+			}
+		}
+	}
+
+	.product-info {
+		font-size: 1.125rem;
+		color: #4a4948;
+	}
+
+	&:hover {
+		.product-image {
+			> a:nth-of-type(2) {
+				z-index: 1;
+				opacity: 1;
+			}
+		}
+	}
+
+	.add-to-cart, .add-to-wishlist {
+		font-size: 1.25rem;
+		color: #423a36;
+
+		@include transition(all 0.3s ease-in-out);	
+
+		&:hover {
+			color: $theme-color;
+		}
+	}
+}
+
+.onhot {
+	font-family: Gilroy-Semibold;
+	font-size: 1rem;
+	padding: 0.25rem 1.25rem;
+	position: absolute;
+	background-color: #ffebeb;
+	text-transform: uppercase;
+	border-bottom-left-radius: 1rem;
+	top: 0.5rem;
+	right: 0.5rem;
+}
+
+.banner-product {
+	.onhot {
+		font-family: Gilroy-Semibold;
+		font-size: 0.75rem;
+		padding: 0.25rem 1.25rem;
+		position: absolute;
+		background-color: $white;
+		text-transform: uppercase;
+		border-bottom-left-radius: 1rem;
+		top: 0.5rem;
+		right: 0.5rem;
+	}
+}
+
+.ads {
+	position: relative;
+    display: block;
+	margin-bottom: 1.5rem;
+
+	.ads-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        .ads-bg-img {
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+			border-radius: 0.5rem;;
+        }
+    }
+
+	.ads-body {
+        position: relative;
+        z-index: 1;
+		padding: 11rem 0;
+    }
+}
